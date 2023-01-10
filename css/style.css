@@ -1,0 +1,227 @@
+/*linear-gradient(to top right, #571158, #8D348E )*/
+
+/* start global rules */
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+* {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	font-family: sans-serif;
+	margin: 0;
+}
+
+:root {
+	--main-color: #571158;
+}
+
+.container {
+	width: 95%;
+	padding-left: 15px;
+	padding-right: 15px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+/* end global rules */
+
+/* start work */
+
+.content {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+}
+
+.content .main {
+	height: 100vh;
+	position: relative;
+}
+
+.content .main nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	min-height: 60px;
+}
+
+.content .main nav .logo img {
+	height: 35px;
+}
+
+.content .main nav a:last-child {
+	color: var(--main-color);
+	text-decoration: none;
+	transition: 0.3s;
+	font-size: 19px;
+	border: 1px solid var(--main-color);
+	padding: 5px 14px;
+	border-radius: 12px;
+	font-weight: normal;
+}
+
+.content .main nav a:last-child:hover {
+	background-color: var(--main-color);
+	color: #fff;
+}
+
+.content .main main {
+	height: calc(100vh - 60px);
+	background-color: #f6f6f6;
+}
+
+.content .main main .fields {
+	width: 70%;
+	margin: auto;
+	padding: 50px 0;
+}
+
+.content .main main .fields .heading h2 {
+	color: #000;
+	margin-bottom: 10px;
+	letter-spacing: 1px;
+	font-size: 30px;
+}
+
+.content .main main .fields .heading p {
+	color: rgba(0, 0, 0, 0.5);
+	margin-bottom: 40px;
+	line-height: 1.5;
+}
+
+.content .main main .fields form {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+}
+
+.content .main main .fields form .labels {
+	display: grid;
+	grid-template-rows: repeat(5, 1fr);
+	grid-gap: 15px;
+	align-items: center;
+}
+
+.content .main main .fields form .labels label {
+	font-size: 16px;
+	font-weight: bold;
+	letter-spacing: .5px;
+}
+
+.content .main main .fields form .inputs {
+	display: grid;
+	grid-template-rows: repeat(5, 1fr);
+	grid-gap: 15px;
+}
+
+.content .main main .fields form .inputs input {
+	padding: 5px 15px;
+	height: 35px;
+	font-size: 17px;
+	border: 0.5px solid #000;
+	border-radius: 5px;
+	transition: 0.3s;
+}
+
+.content .main main .fields form .inputs input:focus {
+	outline: none;
+	border-color: var(--main-color);
+	border-width: 1px;
+}
+
+.content .main main .fields form .inputs input:hover {
+	border: 1px solid var(--main-color);
+}
+
+.content .main main .fields form .btn {
+	position: absolute;
+	bottom: 80px;
+	right: 100px;
+}
+
+.content .main main .fields form .btn button:first-child {
+	padding: 10px 20px;
+	color: var(--main-color);
+	border: 1px solid var(--main-color);
+	background-color: transparent;
+	font-size: 16px;
+	letter-spacing: 1px;
+	transition: 0.3s;
+	border-radius: 10px;
+	cursor: pointer;
+}
+
+.content .main main .fields form .btn button:first-child:hover {
+	background-color: var(--main-color);
+	color: #fff;
+}
+
+.content .main main .fields form .btn button:last-child {
+	padding: 10px 20px;
+	color: #fff;
+	font-size: 16px;
+	border-radius: 10px;
+	background-color: var(--main-color);
+	border: 1px solid var(--main-color);
+	cursor: pointer;
+	margin-left: 225px;
+	letter-spacing: 1px;
+	transition: 0.3s;
+}
+
+.content .main main .fields form .btn button:last-child:hover {
+	background-color: transparent;
+	color: var(--main-color);
+}
+
+.content .main main .fields .login {
+	position: absolute;
+	bottom: 35px;
+	left: 50%;
+	transform: translateX(-60%);
+}
+
+.content .main main .fields .login a {
+	font-weight: bold;
+	color: var(--main-color);
+	text-decoration: none;
+	font-size: 17px;
+}
+
+
+
+.slider {
+	background-image: linear-gradient(to top right, #571158, #8D348E );
+	position: relative;
+}
+
+
+.slider .frame .frame-content {
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	text-align: center;
+}
+
+.slider .frame .frame-content img {
+	margin-bottom: 50px;
+}
+
+.slider .frame .frame-content h2 {
+	margin-bottom: 20px;
+	color: #fff;
+	letter-spacing: 1px;
+}
+
+.slider .frame .frame-content p {
+	color: rgba(255, 255, 255, 0.5);
+	line-height: 1.5;
+}
